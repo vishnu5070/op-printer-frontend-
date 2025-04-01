@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -5,51 +6,66 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f7f7f7;
-  }
-  
-  .container {
+    margin: 0;
+}
+
+/* Container Styles */
+.container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-  }
-  
-  h1 {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading */
+h1 {
     text-align: center;
-  }
-  
-  form {
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
     display: flex;
     flex-direction: column;
-  }
-  
-  label {
+}
+
+label {
     margin-bottom: 5px;
-  }
-  
-  input, textarea, button {
+}
+
+/* Input and Button Styling */
+input, textarea, button {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  button {
+}
+
+button {
     background-color: #4CAF50;
     color: white;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #45a049;
-  }
-  
-  #result {
+}
+
+/* Result Section */
+#result {
     margin-top: 20px;
     text-align: center;
     padding: 10px;
     background-color: #f1f1f1;
     border-radius: 5px;
-  }
-  
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+}
